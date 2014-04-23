@@ -3,7 +3,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 from django.db import models
 from django.utils import timezone
 
-from asymmetricbase.utils.enum import Enum
+from asymmetricbase.enum import Enum
 
 class LogEntryType(Enum):
 	MODEL = 1, 'model'

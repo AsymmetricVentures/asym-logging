@@ -34,7 +34,7 @@ Topic :: Software Development :: Libraries :: Application Frameworks
 setup(
 	name = 'asymmetricbase.logging',
 	version = datetime.now().strftime('%Y%m%d%H%M'),
-	url = 'https://github.com/AsymmetricVentures/asymmetricbase',
+	url = 'https://github.com/AsymmetricVentures/asym-logging',
 	
 	author = 'Richard Eames',
 	author_email = 'reames@asymmetricventures.com',
@@ -48,9 +48,9 @@ setup(
 		'pytz',  # most recent
 		'south<2.0',
 		
-		'asymmetricbase.utils',
+		'asymmetricbase.enum',
 	),
-	
+	dependency_links = ['https://github.com/AsymmetricVentures/asym-enum.git#egg=asymmetricbase.enum', ],
 	package_dir = {
 		'asymmetricbase' : 	'asymmetricbase',
 	},
